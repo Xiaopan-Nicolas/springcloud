@@ -3,8 +3,15 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  <!--继承springboot项目（注意springboot版本和cloud版本）-->
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.3.RELEASE</version>
+    <relativePath/>
+  </parent>
 
-  <!--父级项目-->
+  <!--本项目配置（父级）-->
   <groupId>com.cunxp</groupId>
   <artifactId>springcloud</artifactId>
   <version>0.0.1-SNAPSHOT</version>
@@ -13,13 +20,6 @@
   <name>springcloud</name>
   <description>Demo project for Spring Cloud</description>
 
-  <!--继承springboot父项目-->
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.1.2.RELEASE</version>
-    <relativePath/>
-  </parent>
   <!--子模块-->
   <modules>
     <!--eureka-->
