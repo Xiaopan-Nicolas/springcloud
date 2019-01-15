@@ -28,6 +28,8 @@
     <!--负载均衡-->
     <module>ribbon-service</module>
     <module>feign-service</module>
+    <!--配置中心-->
+    <module>feign-service</module>
 
   </modules>
 
